@@ -134,7 +134,7 @@ body {
   transition: all 0.3s ease-in-out;
   padding-top: 20px;
   padding-bottom: 62px;
-  height: auto;
+  height: 100%;
 }
 .section-services__content-container {
   padding-top: 60px;
