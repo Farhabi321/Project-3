@@ -52,7 +52,6 @@ body {
   font-size: 14px;
   font-weight: 400;
 }
-
 /* *------------------------------- !SECTION TYPOGRAPHY ENDS ------------------------------- */
 
 /* !--------------------- SECTION SECTION REUSEABLE BLOCK -------------------- */
@@ -75,7 +74,10 @@ body {
 .button--blue:hover {
   background: var(--secondary-color);
 }
-
+.icon--custom {
+  font-size: 26px;
+  padding-bottom: 15px;
+}
 /* *--------------------- SECTION SECTION REUSEABLE BLOCK -------------------- */
 
 /* !----------------------- SECTION SECTION HERO STATS ----------------------- */
@@ -101,7 +103,6 @@ body {
 .section-about__title-container {
   padding-bottom: 50px;
 }
-
 /* *--------------------- SECTION SECTION ABOUT US ENDS -------------------- */
 
 /* !--------------------- SECTION SECTION SERVICES STARTS -------------------- */
@@ -131,10 +132,6 @@ body {
   padding-top: 60px;
   padding-bottom: 80px;
 }
-.icon--custom {
-  font-size: 26px;
-  padding-bottom: 15px;
-}
 .card-2 {
   background: #02ccba;
 }
@@ -145,3 +142,32 @@ body {
   padding-bottom: 20px;
 }
 /* *--------------------- !SECTION SECTION SERVICES ENDS -------------------- */
+
+/* !-------------------- SECTION SECTION PORTFOLIO STARTS -------------------- */
+
+.section-portfolio__content-container {
+  position: relative;
+}
+.section-portfolio__content-container:hover
+  .section-portfolio__overlay-container {
+  opacity: 1;
+}
+.section-portfolio__overlay-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  padding: 37px 5px;
+}
+.text--custom {
+  font-size: 22px;
+}
+.section-portfolio__para-container,
+.section-portfolio__icon-container {
+  padding-bottom: 10px;
+}
+/* *-------------------- SECTION SECTION PORTFOLIO ENDS -------------------- */
