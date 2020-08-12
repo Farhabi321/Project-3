@@ -2,408 +2,97 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 /* !------------------------------- SECTION CSS VARIABLES STARTS------------------------------ */
 :root {
-  --main-color: #eb233c;
-  --secondary-color: #faf4fa;
+  --main-color: #02ccba;
+  --secondary-color: #07bcab;
   --tertiary-color: #ffffff;
-  --quaternary-color: #F8F8F8;
+  --quaternary-color: ;
   --secondary-font: "Oleo Script Swash Caps", sans-serif;
 }
 /* *------------------------------- !SECTION CSS VARIABLES ENDS---------------------------- */
 
 /* !------------------------------- SECTION TYPOGRAPHY STARTS ------------------------------- */
 .text-lvl-primary {
-  font-family: var(--secondary-font);
-  font-size: 50px;
+  font-size: 70px;
+  font-weight: 700;
   text-transform: capitalize;
 }
 .text-lvl-secondary {
-  display: inline-block;
-  font-family: var(--secondary-font);
-  font-size: 24px;
+  font-size: 30px;
+  font-weight: 700;
   text-transform: capitalize;
 }
 .text-lvl-tertiary {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 700;
 }
 .text-lvl-quaternary {
-  font-family: var(--secondary-font);
-  font-weight: 500;
-  font-size: 18px;
-  text-transform: capitalize;
 }
 .text-lvl-quinary {
-  font-weight: 500;
-  font-size: 14px;
-  text-transform: capitalize;
 }
 .text-lvl-senary {
-  color: var(--main-color);
-  font-family: var(--secondary-font);
-  font-weight: 500;
-  font-size: 22px;
-  text-transform: capitalize;
 }
 .para {
-  font-size: 15px;
+  font-size: 20px;
+  font-weight: 400;
 }
-.para-custom {
-  font-size: 14px;
+.para--custom {
 }
 
 /* *------------------------------- !SECTION TYPOGRAPHY ENDS ------------------------------- */
 
-/* !----------------------- SECTION REUSEABLE BLOCK STARTS ---------------------- */
-.text-red {
-  color: var(--main-color);
-}
+/* !--------------------- SECTION SECTION REUSEABLE BLOCK -------------------- */
+
 .button {
   display: inline-block;
-  font-size: 15px;
   text-decoration: none;
-  text-transform: capitalize;
+  border-radius: 5px;
+  padding: 15px 35px;
   color: var(--tertiary-color);
-  border: 1px solid #4b3e40;
-  border-radius: 25px;
-  transition: all 0.3s ease;
+  text-transform: capitalize;
 }
 .button:hover {
   text-decoration: none;
-  color: #FFFFFF;
+  color: var(--tertiary-color);
 }
-.button--transparent {
-  text-decoration: none;
-  padding: 12px 35px;
+.button--blue {
+  background: var(--main-color);
 }
-.button--transparent:hover {
-  text-decoration: none;
-  color: #000000;
-  background: #cccccc;
-}
-.button--red {
-  text-decoration: none;
-  border: none;
-  padding: 12px 35px;
-  color: #FFFFFF;
-  background: var(--main-color); 
-}
-}
-.button--red:hover {
-  text-decoration: none;
-  color: #FFFFFF;
-  background: var(--main-color); 
-}
-.button--submit {
-}
-
-
-
- /* SECTION Section header starts */
- 
-.section-header__main-container {
-  padding: 30px 0;
-}
-.section-header__main-title {
-  border-bottom: 2px solid var(--main-color);
-}
-.section-header--custom {
-  padding: 0;
-}
- /* !SECTION Section header starts */
- 
-/* *----------------------- !SECTION REUSEABLE BLOCK STARTS ---------------------- */
-
-
-
-
-/* !----------------------- SECTION SECTION HERO STARTS ---------------------- */
-.section-hero {
-  background-image: linear-gradient(
-      to right,
-      rgba(5, 1, 7, 0.7),
-      rgba(14, 7, 17, 0.7)
-    ),
-    url("./images/background.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-}
-.section-hero__main-menu {
-  background: #443344;
-}
-.navbar {
-  padding: 0.1rem 1rem;
-}
-.nav-custom {
-  background: transparent !important;
-}
-.custom-brand {
-  font-family: var(--secondary-font);
-  font-size: 26px;
-  text-transform: capitalize;
-  transition: all 0.3s ease;
-}
-.custom-brand:hover {
-  color: var(--main-color) !important;
-}
-
-.nav-item-custom {
-  text-transform: capitalize;
-  padding: 0.2rem 0;
-  border-bottom: 2px solid transparent;
-  transition: all 0.3s ease;
-}
-.active {
-  border-bottom: 2px solid var(--main-color);
-  background: #665566;
-}
-.nav-item-custom:hover {
-  background: #665566;
-  border-bottom: 2px solid var(--main-color);
-}
-.nav-link {
-  padding: 0.6rem 0.6rem !important;
-}
-.nav-link-custom {
-  font-size: 14px !important;
-}
-.section-hero__body-container {
-  padding-top: 300px;
-  padding-bottom: 200px;
-}
-.section-hero__text-container {
-  padding-bottom: 55px;
-}
-/* *----------------------- !SECTION SECTION HERO STARTS ---------------------- */
-
-/* !-------------------- SECTION SECTION SERVICES STARTS -------------------- */
-
-.section-services__body-container {
-  padding: 100px 0;
-}
-.section-services__icon-container {
-  width: 65px;
-  height: 65px;
-  border-radius: 40px;
-  border: 1px solid #f8f8f8;
-}
-.section-services__icon-item {
-  font-size: 20px;
-  font-weight: bold;
-  color: var(--main-color);
-  line-height: 65px;
-}
-
-/* .section-services__icon-item::before {
-  color: var(--main-color);
-  font-size: 25px;
-  padding: 25px;
-  margin-left: 0;
-  border: 1px solid #f8f8f8;
-  border-radius: 50%;
-} */
-/* *-------------------- !SECTION SECTION SERVICES STARTS -------------------- */
-
-/* !----------------------- SECTION SECTION WORK STARTS ---------------------- */
-
-.section-work {
+.button--blue:hover {
   background: var(--secondary-color);
 }
-.section-work__body-container {
-  padding: 20px 0;
+
+/* *--------------------- SECTION SECTION REUSEABLE BLOCK -------------------- */
+
+/* !----------------------- SECTION SECTION HERO STATS ----------------------- */
+
+.section-hero {
+  background-image: linear-gradient(to right, #a962f0, #6c62e4, #4cafd4);
 }
-.section-work__button-container {
+.section-hero__title-container {
+  padding-top: 200px;
   padding-bottom: 30px;
 }
-.section-work__img-container {
-  position: relative;
+.section-hero__button-container {
+  padding-top: 20px;
+  padding-bottom: 180px;
 }
-.section-work__inner-container {
-  background: #D8C7BF;
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 0;
-  transition: all 0.3s ease;
-}
-.section-work__img-container:hover .section-work__inner-container {
-  opacity: 0.3;
-}
-/* *----------------------- !SECTION SECTION WORK ENDS ---------------------- */
-
-
-
-/* !-------------------- SECTION SECTION SUBSCRIBE STARTS -------------------- */
-.section-subscribe {
-  background-image: linear-gradient(
-      to right,
-      rgba(5, 1, 7, 0.7),
-      rgba(14, 7, 17, 0.7)
-    ),
-    url("./images/background.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  padding: 50px 0 40px 0;
-}
-.section-subscribe__text-container {
-  margin-top: 10px;
-}
-.section-subscribe__button-container {
-  margin-top: 40px;
-}
-/* *-------------------- SECTION SECTION SUBSCRIBE ENDS -------------------- */
-
+/* *----------------------- SECTION SECTION HERO STATS ----------------------- */
 
 /* !--------------------- SECTION SECTION ABOUT US STARTS -------------------- */
+
 .section-about {
-  padding: 30px 0;
+  padding: 100px 0;
 }
-.section-about__total-number {
-  font-size: 50px;
-  font-weight: 200;
-  color: var(--main-color);
-}
-/* *--------------------- SECTION SECTION ABOUT US ENDS -------------------- */
-
-
-/* !-------------------- SECTION SECTION CONTACT US STARTS ------------------- */
-.section-contact {
-  background: var(--quaternary-color);
-  padding-top: 30px;
+.section-about__title-container {
   padding-bottom: 50px;
 }
-.section-contact__body-container {
-  padding-top: 100px;
-}
-.form--custom {
-  background: none;
-  border: none;
-  border-bottom: 2px solid var(--main-color);
-  border-radius: 0;
-  font-family: "Work Sans", sans-serif ;
-  font-size: 14px;
-}
-.form--custom:hover {
-  border-bottom: 2px solid #000000;
-}
-}
-.form--custom:active {
-  border-bottom: 2px solid #000000;
-}
-.text-area-custom {
-  padding-left: 12px;
-}
-.contact-para-custom {
-  font-size: 16px;
-  font-weight: 500;
-}
-.section-contact__email-container,
-.section-contact__number-container {
-  font-size: 14px;
-}
-.section-contact__icon-item::before {
-  font-size: 14px;
-  color: var(--main-color);
-  margin-left: 0px;
-  margin-top: 0px;
-  margin-right: 7px;
-}
-/* *-------------------- SECTION SECTION CONTACT US ENDS ------------------- */
-
-
-
-/* !---------------------- SECTION SECTION FOOTER STARTS --------------------- */
-.section-footer {
-  padding-top: 35px;
-  padding-bottom: 25px;
-}
-.list-items {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  border-radius: 40px;
-  font-size: 20px;
-  background: #222222;
-  margin-right: 8px;
-}
-.list-items:hover {
-  background: var(--main-color);
-  color: #FFFFFF;
-}
-.list-items .custom-icon {
-  color: #FFFFFF;
-  line-height: 40px;
-}
- /* ! Another Way of Making Circular Icons */
-/* .custom-icon::before {
-  background: #222222;
-  color: #FFFFFF;
-  border-radius: 50%;
-  font-size: 18px;
-  padding: 10px 10px;
-  margin-left: 0;
-  margin-right: 10px;
-}
-.list-links:hover .custom-icon::before {
-  background: var(--main-color);
-  color: #FFFFFF; */
-
-/* *---------------------- SECTION SECTION FOOTER ENDS --------------------- */
-
-
-
-/* !----------------------- SECTION MEDIA QUERY STARTS ----------------------- */
-
-
-/* Extra small devices (portrait phones, less than 576px) */
-
-@media (max-width: 600px) {
-  .text-lvl-primary {
-  font-size: 35px;
-}
-.section-contact__address-container {
-  margin-top: 70px;
-}
-.section-contact__body-container {
-  padding-top: 60px;
-}
+.section-about__para-container {
+  padding-bottom: 30px;
 }
 
-/* Medium devices (tablets, less than 992px) */
-
-@media (max-width: 767.98px) {
-  .section-contact__body-container {
-    padding-top: 60px;
-  }
-  .section-contact__address-container {
-    margin-top: 70px;
-  }
-}
-
-
-
-
-
-
-/* *----------------------- SECTION MEDIA QUERY ENDS ----------------------- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* *--------------------- SECTION SECTION ABOUT US ENDS -------------------- */
