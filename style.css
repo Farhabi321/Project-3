@@ -37,6 +37,9 @@ body {
   text-transform: capitalize;
 }
 .text-lvl-quinary {
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: capitalize;
 }
 .text-lvl-senary {
 }
@@ -73,6 +76,9 @@ body {
 }
 .button--blue:hover {
   background: var(--secondary-color);
+}
+.section-heading--custom {
+  padding-bottom: 20px;
 }
 .icon--custom {
   font-size: 26px;
@@ -138,9 +144,6 @@ body {
 .card-3 {
   background: #02bed2;
 }
-.section-heading--custom {
-  padding-bottom: 20px;
-}
 /* *--------------------- !SECTION SECTION SERVICES ENDS -------------------- */
 
 /* !-------------------- SECTION SECTION PORTFOLIO STARTS -------------------- */
@@ -170,4 +173,61 @@ body {
 .section-portfolio__icon-container {
   padding-bottom: 10px;
 }
-/* *-------------------- SECTION SECTION PORTFOLIO ENDS -------------------- */
+/* *-------------------- !SECTION SECTION PORTFOLIO ENDS -------------------- */
+
+/* !-------------------- SECTION SECTION CONTACT US STARTS ------------------- */
+.section-contact {
+  padding: 100px 0;
+}
+/* .section-contact__title-container {
+  padding-bottom: 20px;
+} */
+.contact-icon {
+  color: var(--main-color);
+  margin-right: 20px;
+  margin-left: 8px;
+}
+.section-contact__text-container {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.border-bottom {
+  border-bottom: 1px solid #dee2e6;
+}
+.section-contact__contact-container {
+  margin-bottom: 5px;
+}
+.section-contact__col-left {
+  margin-right: 25px;
+}
+.border-right {
+  border-right: 1px solid #dee2e6;
+}
+.section-contact__col-right {
+  margin-left: 35px;
+}
+.section-contact__textarea-custom,
+.section-contact__input-box {
+  font-size: 14px;
+  border: none;
+  border-radius: 0;
+  box-shadow: none !important;
+  border-bottom: 1px solid #999999;
+  margin-left: 0;
+}
+.section-contact__textarea-custom:focus,
+.section-contact__input-box:focus {
+  color: var(--main-color) !important;
+  border-bottom: 1px solid #999999;
+}
+.form-control {
+  padding: 0.375rem 0;
+}
+.button--submit {
+  border: 0;
+}
+/* *-------------------- !SECTION SECTION CONTACT US ENDS ------------------- */
+
+/* !---------------------- SECTION SECTION FOOTER STARTS --------------------- */
+
+/* -*-------------------- !SECTION SECTION FOOTER ENDS --------------------- */
