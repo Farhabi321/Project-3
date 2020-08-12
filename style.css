@@ -8,8 +8,8 @@ body {
 :root {
   --main-color: #02ccba;
   --secondary-color: #07bcab;
-  --tertiary-color: #ffffff;
-  --quaternary-color: ;
+  --tertiary-color: #fafafa;
+  --quaternary-color: #ffffff;
   --secondary-font: "Oleo Script Swash Caps", sans-serif;
 }
 /* *------------------------------- !SECTION CSS VARIABLES ENDS---------------------------- */
@@ -21,7 +21,7 @@ body {
   text-transform: capitalize;
 }
 .text-lvl-secondary {
-  font-size: 30px;
+  font-size: 32px;
   font-weight: 700;
   text-transform: capitalize;
 }
@@ -29,8 +29,12 @@ body {
   font-size: 20px;
   font-style: italic;
   font-weight: 700;
+  text-transform: capitalize;
 }
 .text-lvl-quaternary {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: capitalize;
 }
 .text-lvl-quinary {
 }
@@ -41,6 +45,12 @@ body {
   font-weight: 400;
 }
 .para--custom {
+  font-size: 16px;
+  font-weight: 400;
+}
+.para-overlay {
+  font-size: 14px;
+  font-weight: 400;
 }
 
 /* *------------------------------- !SECTION TYPOGRAPHY ENDS ------------------------------- */
@@ -52,12 +62,12 @@ body {
   text-decoration: none;
   border-radius: 5px;
   padding: 15px 35px;
-  color: var(--tertiary-color);
+  color: var(--quaternary-color);
   text-transform: capitalize;
 }
 .button:hover {
   text-decoration: none;
-  color: var(--tertiary-color);
+  color: var(--quaternary-color);
 }
 .button--blue {
   background: var(--main-color);
@@ -91,8 +101,47 @@ body {
 .section-about__title-container {
   padding-bottom: 50px;
 }
-.section-about__para-container {
-  padding-bottom: 30px;
-}
 
 /* *--------------------- SECTION SECTION ABOUT US ENDS -------------------- */
+
+/* !--------------------- SECTION SECTION SERVICES STARTS -------------------- */
+
+.section-services {
+  background: var(--tertiary-color);
+  padding: 100px 0;
+}
+.section-services__card-body {
+  position: relative;
+  background: #02b3e4;
+}
+.section-services__card-body:hover .section-services__overlay-container {
+  opacity: 1;
+}
+.section-services__overlay-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #474747;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  padding-top: 20px;
+  padding-bottom: 62px;
+}
+.section-services__content-container {
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+.icon--custom {
+  font-size: 26px;
+  padding-bottom: 15px;
+}
+.card-2 {
+  background: #02ccba;
+}
+.card-3 {
+  background: #02bed2;
+}
+.section-heading--custom {
+  padding-bottom: 20px;
+}
+/* *--------------------- !SECTION SECTION SERVICES ENDS -------------------- */
