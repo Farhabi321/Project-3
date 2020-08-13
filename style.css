@@ -91,6 +91,38 @@ body {
 .section-hero {
   background-image: linear-gradient(to right, #a962f0, #6c62e4, #4cafd4);
 }
+.section-hero__logo-nav-container {
+  padding-top: 20px;
+}
+.section-hero__logo-custom {
+  font-size: 50px;
+}
+.section-hero__logo-text {
+  font-size: 24px;
+  text-transform: capitalize;
+}
+.navbar-custom {
+  background: transparent !important;
+}
+.fixed-top {
+  left: 80%;
+  top: 20px;
+}
+.navbar-toggler {
+  background-color: rgba(52, 58, 64, 0.5);
+}
+.navbar-toggler:hover {
+  background-color: #343a40;
+}
+.nav-item-custom {
+  text-transform: capitalize;
+}
+.nav-item-custom:hover {
+  background: #455f65;
+}
+.nav-link-custom {
+  color: var(--quaternary-color);
+}
 .section-hero__title-container {
   padding-top: 200px;
   padding-bottom: 30px;
